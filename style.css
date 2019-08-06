@@ -289,6 +289,7 @@ input.redondo{
 		border-radius:5px;
 		border: none;
 		box-shadow: 5px 5px 10px #9E9E9E;
+		
 	}
 #theam .card:hover h3 {
 		color: #fff;
@@ -360,3 +361,9 @@ input.redondo{
 .form-elegant .modal-body, .form-elegant .modal-footer {
 	font-weight: 400; }
 	
+	/* workaround */
+	.iti__flag {background-image: url("path/to/flags.png");}
+ 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("path/to/flags@2x.png");}
+}
