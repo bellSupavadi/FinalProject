@@ -52,82 +52,106 @@
      <!-- <div class="bg-text"> -->
          <h1>MOTERCYCLE FOR RENT</h1>
           <p>" Once a year,go see someplace you'd never been before "</p>    
-          <a href="index.html" class="button">Rent Now !</a>
+          <a href="" class="button" data-toggle="modal" data-target="#elegantModalForm">Rent Now!</a>
+         
         <!-- </div> -->
   </section>
+  <!-- Modal -->
+  <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <!--Content-->
+    <div class="modal-content form-elegant">
+      <!--Header-->
+      <div class="modal-header text-center">
+      
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        
+      </div>
+      <!--Body-->
+      <div class="modal-body mx-4">
+        <!--Body-->
+        <div id="login" >
+          <div class="card mx-auto border-0" >
+            <div class="card-header border-bottom-0 bg-transparent">
+              <ul class="nav nav-tabs justify-content-center " id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active text-primary" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login"
+                     aria-selected="true">Login</a>
+                </li>
+        
+                <li class="nav-item">
+                  <a class="nav-link text-primary" id="pills-register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register"
+                     aria-selected="false">Register</a>
+                </li>
+              </ul>
+            </div>
+        
+            <div class="card-body pb-4">
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+                  <form>
+                    <div class="form-group">
+                      <input type="email" name="email" class="form-control" id="email" placeholder="Email" required autofocus>
+                    </div>
+        
+                    <div class="form-group">
+                      <input type="password" name="password" class="form-control" id="password" id="password" placeholder="Password" required>
+                    </div>
+        
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" id="customCheck1" checked="" type="checkbox">
+                      <label class="custom-control-label" for="customCheck1">Check me out</label>
+                    </div>
+        
+                    <div class="text-center pt-4">
+                      <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+        
+                    <div class="text-center pt-2">
+                      <a class="btn btn-link text-primary" href="#">Forgot Your Password?</a>
+                    </div>
+                  </form>
+                </div>
+        
+                <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="pills-register-tab">
+                  <form>
+                    <div class="form-group">
+                      <input type="text" name="username" id="name" class="form-control" placeholder="Username" required autofocus>
+                    </div>
+        
+                    <div class="form-group">
+                      <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                    </div>
+        
+                    <div class="form-group">
+                      <input type="password" name="password" id="password" class="form-control" placeholder="Set a password" required>
+                    </div>
+        
+                    <div class="form-group">
+                      <input type="password" name="password_confirmation" id="password-confirm" class="form-control" placeholder="Confirm password" required>
+                    </div>
+        
+                    <div class="text-center pt-2 pb-1">
+                      <button type="submit" class="btn btn-primary">Register</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <br>
+     
+       </div>
+      </div>
+    </div>
   </div>
+</div>
   
- 
-<div class="container">
-  
-<div class="bestSell">
-  <br>
-  <p>BEST STORE </p>
-  <div class="form-group">
-    <label for=""></label>
-    <select class="form-control" name="" id="">
-      <option></option>
-      <option></option>
-      <option></option>
-    </select>
-  </div>
 
-  </div>
-
-  <div class="card-deck">
-    <div class="card">
-      <img class="card-img-top" src="photo/p3.jpg" alt="Card image">
-    <div class="card-body">
-      <h4 class="card-title">John Doe</h4>
-      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-      <a href="#" class="btn btn-primary stretched-link">See Profile</a>
-      </div>
-    </div>
-    <div class="card">
-        <img class="card-img-top" src="photo/p3.jpg" alt="Card image" >
-        <div class="card-body">
-          <h4 class="card-title">John Doe</h4>
-          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-          <a href="#" class="btn btn-primary stretched-link">See Profile</a>
-      </div>
-    </div>
-    <div class="card">
-        <img class="card-img-top" src="photo/p3.jpg" alt="Card image" >
-        <div class="card-body">
-          <h4 class="card-title">John Doe</h4>
-          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-          <a href="#" class="btn btn-primary stretched-link">See Profile</a>
-      </div>
-    </div>
-  </div> 
-  <div class="card-deck">
-      <div class="card">
-        <img class="card-img-top" src="photo/p3.jpg" alt="Card image">
-      <div class="card-body">
-        <h4 class="card-title">John Doe</h4>
-        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-        <a href="#" class="btn btn-primary stretched-link">See Profile</a>
-        </div>
-      </div>
-      <div class="card">
-          <img class="card-img-top" src="photo/p3.jpg" alt="Card image" >
-          <div class="card-body">
-            <h4 class="card-title">John Doe</h4>
-            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-            <a href="#" class="btn btn-primary stretched-link">See Profile</a>
-        </div>
-      </div>
-      <div class="card">
-          <img class="card-img-top" src="photo/p3.jpg" alt="Card image" >
-          <div class="card-body">
-            <h4 class="card-title">John Doe</h4>
-            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-            <a href="#" class="btn btn-primary stretched-link">See Profile</a>
-        </div>
-      </div>
-    </div> 
-    </div>
-  </div>
   
   
   <section id="credit">

@@ -367,3 +367,11 @@ input.redondo{
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .iti__flag {background-image: url("path/to/flags@2x.png");}
 }
+
+#login .card {
+  width: 300px;
+}
+
+.nav-item .nav-link[disabled]:hover {
+  
+}
