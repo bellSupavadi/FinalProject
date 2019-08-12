@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=""
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#">
+            <img src="photo/MFR.png" style="width:50px;">
+        </a>
+
+    </nav>
+    <br> <br> <br> <br>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="#admin1" data-toggle="tab" class="nav-link active">รายงานข้อมูลการเช่ารถจักรยานยนต์</a>
+            </li>
+            <li class="nav-item">
+                <a href="#admin2" data-toggle="tab" class="nav-link">รายงานร้านเช่ารถจักรยานยนต์</a>
+            </li>
+            <li class="nav-item">
+                    <a href="#admin3" data-toggle="tab" class="nav-link">รายงานข้อมูลสมาชิกในเว็บไซต์</a>
+                </li>
+                <li class="nav-item">
+                        <a href="#admin4" data-toggle="tab" class="nav-link">รายงานข้อความจากสมาชิก</a>
+                    </li>
+        </ul>
+        <div class="tab-content py-3">
+            <div class="tab-pane active" id="admin1">
+               <div class="card-deck">
+                   <div class="card">
+                       <div class="card-body">
+                           <h4 class="card-title">Title</h4>
+                           <p class="card-text">Text</p>
+                       </div>
+                   </div>
+                </div>
+                   
+            </div>
+            <div class="tab-pane" id="admin2">
+                    <div class="card-deck">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Title</h4>
+                                    <p class="card-text">Text</p>
+                                </div>
+                            </div>
+                         </div>
+            </div>
+            <div class="tab-pane" id="admin3">
+                    <div class="card-deck">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Title</h4>
+                                    <p class="card-text">Text</p>
+                                </div>
+                            </div>
+                         </div>
+                </div>
+                <div class="tab-pane" id="admin4">
+                        <div class="card-deck">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Title</h4>
+                                        <p class="card-text">Text</p>
+                                    </div>
+                                </div>
+                             </div>
+                    </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+    <section id="credit">
+        <p>Motorcycle For Rent</p>
+    </section>
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script>
+        // // wire up shown event
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            console.log("tab shown...");
+    
+        });
+     
+        // read hash from page load and change tab
+        var hash = document.location.hash;
+        var prefix = "tab_";
+        if (hash) {
+            $('.nav-tabs a[href="' + hash.replace(prefix, "") + '"]').tab('show');
+        }
+
+        // Javascript to enable link to tab
+        
+        
+    </script>
+</body>
+
+</html>
