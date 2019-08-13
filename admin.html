@@ -47,47 +47,119 @@
                         <a href="#admin4" data-toggle="tab" class="nav-link">รายงานข้อความจากสมาชิก</a>
                     </li>
         </ul>
+        <br><br>
         <div class="tab-content py-3">
             <div class="tab-pane active" id="admin1">
-               <div class="card-deck">
-                   <div class="card">
-                       <div class="card-body">
-                           <h4 class="card-title">Title</h4>
-                           <p class="card-text">Text</p>
-                       </div>
-                   </div>
-                </div>
+               <table class="table">
+                   <thead>
+                       <tr>
+                           <th>ชื่อ</th>
+                           <th>Email</th>
+                           <th>วันที่เช่า</th>
+                           <th>เช่าร้าน</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                           <td scope="row"></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                       </tr>
+                       <tr>
+                           <td scope="row"></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                       </tr>
+                   </tbody>
+               </table>
                    
             </div>
             <div class="tab-pane" id="admin2">
-                    <div class="card-deck">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Title</h4>
-                                    <p class="card-text">Text</p>
-                                </div>
-                            </div>
-                         </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ชื่อร้าน</th>
+                                <th>Login</th>
+                                <th>Logout</th>
+                                <th>Not Update</th>
+                                <th>สถานะ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td scope="row"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
             </div>
             <div class="tab-pane" id="admin3">
-                    <div class="card-deck">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Title</h4>
-                                    <p class="card-text">Text</p>
-                                </div>
-                            </div>
-                         </div>
+                   <table class="table">
+                       <thead>
+                           <tr>
+                            <th>ชื่อ</th>
+                            <th>Email</th>
+                            <th>วันที่สมัคร</th>
+                            <th>ชื่อร้าน</th>
+                            <th>รายละเอียด</th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr>
+                               <td scope="row"></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td><a href="" class="btn btn-outline-primary" data-toggle="modal" data-target="#elegantModalForm">
+                                รายละเอียด</a></td>
+                           </tr>
+                           <tr>
+                               <td scope="row"></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td> </td>
+                           </tr>
+                       </tbody>
+                   </table>
                 </div>
                 <div class="tab-pane" id="admin4">
-                        <div class="card-deck">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Title</h4>
-                                        <p class="card-text">Text</p>
-                                    </div>
-                                </div>
-                             </div>
+                       <table class="table">
+                           <thead>
+                               <tr>
+                                   <th>ชื่อ</th>
+                                   <th>วันที่</th>
+                                   <th>เวลา</th>
+                                   <th>รายละเอียดของข้อความ</th>
+                               </tr>
+                           </thead>
+                           <tbody>
+                               <tr>
+                                   <td scope="row"></td>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>
+                               </tr>
+                               <tr>
+                                   <td scope="row"></td>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>
+                               </tr>
+                           </tbody>
+                       </table>
                     </div>
         </div>
     </div>
@@ -105,7 +177,50 @@
     </section>
 
 
-
+ <!-- Modal -->
+ <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+ aria-hidden="true">
+ <div class="modal-dialog" role="document">
+   <!--Content-->
+   <div class="modal-content form-elegant">
+     <!--Header-->
+     <div class="modal-header text-center">
+     
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
+     <!--Body-->
+     <div class="modal-body mx-4">
+       <!--Body-->
+      
+  <p>รายละเอียด</p>
+ <hr>         
+      <br>
+<p>ประวัติการเงิน</p>
+<hr>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ชื่อร้าน</th>
+            <th>ยี่ห้อรถ</th>
+            <th>วันที่โอนเงินให้ร้าน</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td scope="row"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td scope="row"></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+   </div>
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
